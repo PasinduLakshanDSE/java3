@@ -1,0 +1,25 @@
+package input;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class practise5 {
+	public static void main(String[]args) {
+		Scanner scn =new Scanner(System.in);
+		int[] number=new int[10];
+		for(int count=0;count<number.length;count++) {
+			System.out.println("Enter the number");
+			number[count]=scn.nextInt();
+			
+		}
+		int total=0;
+		double avg;
+		for(int count=0;count<number.length;count++) {
+			total=total+number[count];
+			
+		}
+		avg=total/10;
+		System.out.println("Total is: "+total);
+		System.out.println("Avg is: "+avg);
+	}
+
+}
